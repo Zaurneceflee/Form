@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html to pdf</title>
+</head>
+<style>
+    h1{
+        color:green
+        background - red
+    }
+</style>
+<body>
+    <div id="heading">
+        <h1>This is a demo image</h1>
+    </div>
+</body>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js"></script>
+<script>
+    var doc= new jsPDF()
+var h1=document.querySelector('#heading')
+    doc.fromHTML(h1,15,15)
+    doc.save(output.pdf)
+</script>
+</html>
